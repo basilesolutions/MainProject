@@ -89,7 +89,9 @@ public class PageUtilities {
 			Actions action =new Actions(driver);
 			action.sendKeys(Keys.ESCAPE);
 			action.build().perform();
+			
 		}
+		
 		
 		public static void spaceBarKeyPress(WebDriver driver) {
 			Actions action =new Actions(driver);
@@ -107,6 +109,12 @@ public class PageUtilities {
 			Actions action =new Actions(driver);
 			action.sendKeys(Keys.CONTROL);
 			action.build().perform();
+		}
+		public static void shiftKeyPress(WebDriver driver) {
+			Actions action =new Actions(driver);
+			action.sendKeys(Keys.SHIFT);
+			action.build().perform();
+			
 		}
 
 }
